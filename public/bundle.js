@@ -23887,7 +23887,7 @@
 		}, {
 			key: 'handleAddNote',
 			value: function handleAddNote(newNote) {
-				base.post(this.getCurrentParams().username, {
+				base.post(this.router.getCurrentParams().username, {
 					data: this.state.notes.concat([newNote])
 				});
 			}
